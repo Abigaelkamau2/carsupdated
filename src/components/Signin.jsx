@@ -14,6 +14,9 @@ const Signin =()=>{
     const[success, setSuccess] = useState("")
     const[error, setError ]= useState ("")
 
+    // state for showing and hiding password 
+    const [ showPassword, setShowPassword]=useState(false);
+
     // function to handlesubmit 
     const handlesubmit = async (e) => {
         e.preventDefault ()
@@ -58,9 +61,23 @@ const Signin =()=>{
                     <input type="Email" className="form-control" placeholder=" ✉️  Enter Email"
                     onChange={(e)=>setEmail(e.target.value)}
                     /> <br />
-                    <input type="Password" className="form-control" placeholder=" 🔑 Enter Password" 
+                    {/* <input type="Password" className="form-control" placeholder=" 🔑 Enter Password" 
                     onChange = {(e)=> setPassword(e.target.value)}
-                    /> <br />
+                    /> <br /> */}
+                    <div className="input-group">
+                        <input type={showPassword? "text":"password"}
+                        className="form-control"
+                        placeholder="🔑 Enter password"
+                        onChange={(e) => setPassword(e.target.value)} />
+                        <span className="input-group-text"
+                        style={{ cursor : "pointer"}}
+                        onClick={()=> setShowPassword(!showPassword)}
+                        >
+                            {showPassword?"🔒" : "👁️"}
+                            
+                        </span>
+                    </div>
+                    <br />
                     <button className="btn btn-primary w-100"> Sign in 📋 </button> <br /> <br />
                     <p>Don`t have and account?  <Link to = "/signup"> Sign Up </Link></p>
                     
