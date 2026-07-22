@@ -16,13 +16,13 @@ const Navbar = () => {
                    <div class="collapse navbar-collapse" id="navbarcollapse">
                     {/* <!-- left links   --> */}
                      <div class="navbar-nav" >
-                        <a href="/" class="nav-link" className='text-danger' >Home</a> 
+                        <a href="/" class="nav-link text-danger"  >Home</a> 
 
-                        <a href="signin" class="nav-link" className='text-danger'>Signin</a>
+                        <a href="signin" class="nav-link text-danger" >Signin</a>
 
-                        <a href="signup" class="nav-link" className='text-danger'>signup</a>
+                        <a href="signup" class="nav-link text-danger" >signup</a>
                         
-                        <a href=" addproduct" class="nav-link" className='text-danger'>Addproduct</a>
+                        <a href=" addproduct" class="nav-link text-danger" >Addproduct</a>
                         
                      </div>
                    </div>
