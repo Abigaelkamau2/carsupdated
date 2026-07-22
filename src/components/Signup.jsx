@@ -31,7 +31,7 @@ const Signup=()=>{
         formdata.append("phone",Phone)
 
         try {
-            const response = await axios.post("http://abigael.alwaysdata.net/api/signup",formdata)
+            const response = await axios.post("https://abigael.alwaysdata.net/api/signup",formdata)
             setSuccess(response.data.message)
             setLoading("")
             

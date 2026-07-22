@@ -20,7 +20,7 @@ const Getproducts =()=>{
     const getproducts = async()=>{
         setLoading ("please wait...")
         try {
-        const  response = await axios.get("http://abigael.alwaysdata.net/api/getproducts")
+        const  response = await axios.get("https://abigael.alwaysdata.net/api/getproducts")
         setProducts (response.data)
         setLoading("")
         } catch (error) {
@@ -36,7 +36,7 @@ const Getproducts =()=>{
     // log to see if we have products 
     console.log(products);
     // image path 
-    const imagepath="http://abigael.alwaysdata.net/static/images/"
+    const imagepath="https://abigael.alwaysdata.net/static/images/"
 
     return(
         <div className="row  container-fluid">

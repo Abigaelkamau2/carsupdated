@@ -27,7 +27,7 @@ const Addproduct =()=>{
         formdata.append ("product_photo", productphoto)   
         
         try {
-            const response = await axios.post ("http://abigael.alwaysdata.net/api/addproduct" , formdata) 
+            const response = await axios.post ("https://abigael.alwaysdata.net/api/addproduct" , formdata) 
             setSuccess (response.data.message)
             setLoading ("")
         } catch (error)

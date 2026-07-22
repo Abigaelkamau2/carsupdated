@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom"
 const Mpesapayments =()=>{
     const {singleproduct}=useLocation().state||{}
     //  image path goes here
-    const imagepath="http://abigael.alwaysdata.net/static/images/" 
+    const imagepath="https://abigael.alwaysdata.net/static/images/" 
     // declare states 
     const [ phone , setPhone]=useState("")
     const [ loading , setLoading]=useState("")
