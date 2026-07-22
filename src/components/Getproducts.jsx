@@ -46,6 +46,9 @@ const Getproducts =()=>{
                 <input className="form-control w-50"  type="search" placeholder="Search Products..." value={search} onChange={(e)=> setSearch(e.target.value)} />
                 </div>
             <h1 className="text-dark">Available Cars</h1>
+            {/* bind the states here  */}
+            <h1>{loading} </h1>
+            <h1>{error} </h1>
             {/* map the products  */}
             {filtered_products.slice(0,visibleCount).map((singleproduct)=>(
                 

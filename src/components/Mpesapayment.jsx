@@ -39,7 +39,7 @@ const Mpesapayments =()=>{
                  
 
                 {/* image goes here  */}
-                <img src={imagepath + singleproduct . product_photo} alt="" height={400} />
+                <img src={imagepath + singleproduct.product_photo} alt="" height={400} />
 
                 <h5>{singleproduct.product_name}</h5>
                 <p>{ singleproduct.product_description}</p>

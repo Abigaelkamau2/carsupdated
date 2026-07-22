@@ -9,7 +9,7 @@ const Addproduct =()=>{
     const [ productcost, setProductCost] = useState("")
     const [ productphoto, setProductPhoto]= useState("")
 
-     {/* 3 states of posting data  */}
+     
             const[ loading , setLoading ] = useState ("")
             const[ success, setSuccess ] = useState ("")
             const[ Error , setError] = useState ("")
