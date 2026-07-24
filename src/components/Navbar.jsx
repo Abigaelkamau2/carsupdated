@@ -23,12 +23,13 @@ const Navbar = () => {
                         <a href="signup" class="nav-link text-danger" >signup</a>
                         
                         <a href=" addproduct" class="nav-link text-danger" >Addproduct</a>
+                        <a href="/videos" className="nav-link"> Videos </a>
                         
                      </div>
                    </div>
 
             </nav>
-        </div>
+        </div> 
      </section> 
 
   )

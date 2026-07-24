@@ -11,6 +11,10 @@ import Addproduct from './components/Addproduct';
 import Mpesapayment from './components/Mpesapayment';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Videos from './components/Videos';
+
+
+
 
 
 
@@ -35,6 +39,8 @@ function App() {
         <Link to = "/Signup" className='btn btn- me-2'> Signup</Link>
         <Link to = "/Addproduct" className='btn btn- me-2'>Addproduct</Link>
         <Link to = "/" className='btn btn- me-2'> Getproducts</Link>
+        
+
       
 
 
@@ -46,6 +52,7 @@ function App() {
         <Route path='/Addproduct' element = {<Addproduct/>}/>
         <Route path='/' element = {<Getproducts/>}/>
         <Route path='/mpesa' element = {<Mpesapayment/>}/>
+        <Route path='/Videos' element = {<Videos/>} />  
 
       </Routes>
 
